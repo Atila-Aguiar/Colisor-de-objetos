@@ -12,7 +12,7 @@ captura = cv2.VideoCapture(0)
 
 
 class Quadrado:
-    def __init__(self, cor, velocidade, largura, altura, passou, score):
+    def __init__(self, cor, velocidade, largura, altura):
         self.Cores = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]
         self.largura = largura
         self.cor = self.Cores[cor]
@@ -35,8 +35,6 @@ class Quadrado:
             del self
         else:
             cv2.rectangle(img, (self.largura, self.altura), (self.largura+20, self.altura+20), self.cor, -1)
-
-
 
 
 
@@ -89,7 +87,7 @@ while True:
         valor += 1
         if valor % 7 == 0:
             valor = 0
-            ListaQuadrado.append(Quadrado(random.randrange(3), random.randrange(1, 4, 1), largura, random.randrange(altura-10), passou, score))
+            ListaQuadrado.append(Quadrado(random.randrange(3), random.randrange(1, 4, 1), largura, random.randrange(altura-10)))
 
     cv2.imshow("Jogo", gray)
     cv2.imshow("Video", imagem)

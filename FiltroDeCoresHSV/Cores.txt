@@ -1,10 +1,9 @@
-
 Verde:
-Claro = [67, 76, 51]
-Escuro = [99, 255, 182]
+Claro = np.array([67, 76, 51])
+Escuro = np.array([99, 255, 182])
 Azul:
-Claro = [101, 104, 65]
-Escuro = [176, 255, 255]
+Claro = np.array([101, 104, 65])
+Escuro = np.array([176, 255, 255])
 Amarelo:
-Claro = [17, 102, 142]
-Escuro = [51, 255, 255]
+Claro = np.array([17, 102, 142])
+Escuro = np.array([51, 255, 255])
